@@ -1,0 +1,74 @@
+@import url(reset.css);
+@import url(common.css);
+
+header {
+  height: 80px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #dbdbdb;
+}
+
+.menu_wrap {
+  width: 980px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+/* header end */
+
+.section_1 {
+  padding: 50px 0 0 0;
+}
+
+/* .section_1 .swiper {
+  width: 3162px;
+} */
+
+.section_1 .con {
+  width: 988px;
+  height: 620px;
+  background-color: lightgray;
+  border-radius: 34px;
+}
+
+/* section_1 end */
+.section_2 .con_wrap {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+}
+
+.section_2 .con {
+  width: 343px;
+  position: relative;
+}
+
+.section_2 .icon {
+  width: 62px;
+  height: 29px;
+  font-size: 14px;
+  color: #fb182a;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+  border: 1px solid #fb182a;
+}
+
+.section_2 .con h4 {
+  font-size: 16px;
+  font-weight: 500;
+  text-align: center;
+  color: #808080;
+}
+.section_2 .con h3 {
+  font-size: 24px;
+  font-weight: 700;
+  text-align: center;
+  margin-top: 20px;
+  color: #333;
+}

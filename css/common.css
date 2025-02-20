@@ -1,0 +1,97 @@
+header,
+section,
+footer {
+  padding: 0 200px;
+}
+
+section:not(.section_1) {
+  padding-top: 160px;
+  padding-bottom: 160px;
+}
+
+.title_wrap {
+  position: relative;
+}
+
+.title_wrap h3 {
+  font-size: 46px;
+  font-weight: 800;
+  text-align: center;
+}
+
+.more {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.more a {
+  font-size: 12px;
+  display: flex;
+}
+
+.more span {
+  font-size: 24px;
+  color: #777;
+}
+
+.more_icon {
+  width: 28px;
+  height: 28px;
+  border-radius: 15px 9px 15px 15px;
+  border: 2px solid #00903b;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 11px;
+  font-size: 24px;
+  font-weight: 400;
+  color: #00903b;
+}
+
+/* common title */
+
+.section_2 .con_wrap,
+.section_4 .con_wrap {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+}
+
+.section_2 .con {
+  width: 343px;
+  position: relative;
+}
+
+.section_4 .con {
+  width: 280px;
+}
+
+.section_2 .icon,
+.section_4 .icon {
+  width: 62px;
+  height: 29px;
+  font-size: 14px;
+  color: #fb182a;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+  border: 1px solid #fb182a;
+}
+
+.section_2 .con h4,
+.section_4.con h4 {
+  font-size: 16px;
+  font-weight: 500;
+  text-align: center;
+  color: #808080;
+}
+.section_2 .con h3,
+.section_4 .con h3 {
+  font-size: 24px;
+  font-weight: 700;
+  text-align: center;
+  margin-top: 20px;
+  color: #333;
+}
