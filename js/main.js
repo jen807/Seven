@@ -1,11 +1,28 @@
-const swiper = new Swiper(".swiper", {
-  loop: true,
-  slidesPerView: 3,
-  spaceBetween: 100,
-  centeredSlides: true,
+$(document).ready(function () {
+  $(window).scroll(function () {
+    // console.log("스크롤 작동");
+    var pageY = $(window).scrollTop();
+    // console.log(pageY);
 
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
-  },
+    if (pageY >= 500) {
+      $("header").addClass("header_active");
+    } else {
+      $("header").removeClass("header_active");
+    }
+  });
+
+  //   scroll event end
+
+  $("header").hover(
+    function () {
+      $(".lnb").css({
+        height: 600,
+      });
+    },
+    function () {
+      $(".lnb").css({
+        height: 0,
+      });
+    }
+  );
 });

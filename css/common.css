@@ -38,7 +38,7 @@ section:not(.section_1) {
 .more_icon {
   width: 28px;
   height: 28px;
-  border-radius: 15px 9px 15px 15px;
+  border-radius: 50%;
   border: 2px solid #00903b;
   display: flex;
   align-items: center;
@@ -47,6 +47,20 @@ section:not(.section_1) {
   font-size: 24px;
   font-weight: 400;
   color: #00903b;
+  transition: 0.5s;
+}
+
+.more_icon span {
+  color: #00903b;
+}
+
+.more:hover .more_icon {
+  border-radius: 15px 3px 15px 15px;
+}
+
+.more:hover .more_icon span {
+  transform: rotate(360deg);
+  transition: 0.5s;
 }
 
 /* common title */

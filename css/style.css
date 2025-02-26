@@ -8,6 +8,10 @@ header {
   justify-content: space-between;
   align-items: center;
   border-bottom: 1px solid #dbdbdb;
+  background-color: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(3px);
+  position: relative;
+  z-index: 10;
 }
 
 .menu_wrap {
@@ -18,10 +22,28 @@ header {
   font-weight: 500;
 }
 
+.lnb {
+  width: 100%;
+  /* 반응형으로 하는게 아니라 중단점에 맞춰서 px로 하는게 좋다 */
+  height: 0px;
+  background-color: #dbdbdb;
+  position: absolute;
+  top: 80px;
+  left: 0;
+  overflow: hidden;
+  transition: 0.3s;
+}
+
+.header_active {
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
 /* header end */
 
 .section_1 {
-  padding: 50px 0 0 0;
+  padding: 130px 0 0 0;
 }
 
 /* .section_1 .swiper {
